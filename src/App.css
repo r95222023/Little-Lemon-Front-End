@@ -1,0 +1,146 @@
+section.banner {
+    display: flex;
+    gap: 2rem 1rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    flex-direction: row;
+}
+
+section.banner article {
+    flex: 1;
+}
+
+section.banner article img {
+    max-width: 100%;
+}
+
+#appbar {
+    background-color: #495E57;
+}
+
+#hero {
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.8)), url('../public/restaurant_inside_alternative.jpg');
+    background-size: cover;
+    background-position: 75%;
+    color: white;
+    min-height: 200px;
+    text-align: center;
+    padding-top: 20px;
+    margin-top: 20px;
+}
+
+#hero h1 {
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+}
+
+#hero p {
+    font-size: 2rem;
+    margin: 0;
+    text-shadow: 2px 2px 4px #333333;
+}
+
+.book_btn {
+    width: 200px !important;
+    display: inline-block !important;
+    color: #495E57 !important;
+    width: 200px !important;
+    font-weight: bold !important;
+    font-size: 1.5rem !important;
+    padding: 8px !important;
+    border: 3px solid #495E57 !important;
+    text-align: center !important;
+    outline: none !important;
+    text-decoration: none !important;
+    margin: 1rem !important;
+}
+
+.book_btn:hover {
+    color: #fff !important;
+    background: #495E57;
+    border: 3px solid #495E57;
+}
+
+.cta {
+    display: inline-block;
+    color: rgba(255, 255, 255, 0.9);
+    width: 200px;
+    font-weight: bold;
+    font-size: 1.5rem;
+    padding: 8px;
+    border: 3px solid #fff;
+    text-align: center;
+    outline: none;
+    text-decoration: none !important;
+    margin: 1rem;
+    color: white;
+}
+
+.cta:hover {
+    color: #fff;
+    background: #495E57;
+    border: 3px solid #495E57;
+}
+
+.heading-shadow {
+    text-shadow: 1px 1px 4px #333333;
+}
+
+.heading-shadow {
+    text-shadow: 1px 1px 4px #333333;
+}
+
+article.flex1 {
+    flex: 1;
+}
+
+.card-footer {
+    text-align: left;
+}
+
+footer {
+    background-color: #EDEFEE;
+    padding: 1rem;
+    display: flex;
+    gap: 2rem 1rem;
+}
+
+footer img {
+    max-width: 50%;
+}
+
+footer p {
+    border-top: #333333;
+    border-style: solid;
+    border-width: 0.1rem;
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+    text-align: right;
+    padding-top: 1rem;
+    ;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding-bottom: 1rem;
+}
+
+.column {
+    flex-basis: 50%;
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+}
+
+.column figure {
+    padding: 0px 12px;
+
+}
+
+@media (max-width: 767px) {
+    .hidden-mobile {
+      display: none !important;
+    }
+  }
