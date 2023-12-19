@@ -13,6 +13,8 @@ import ourmenu from "../../assets/grill.jpg"
 import booktable from "../../assets/restaurant_inside.jpg"
 import restaurant from "../../assets/restaurant food.jpg"
 import openhour from "../../assets/head_chef.jpg"
+import config from '../../config'
+const routes = config.routes
 
 function Homepage() {
   return (
@@ -21,7 +23,7 @@ function Homepage() {
       <PageHeader title="" />
       <Grid columns="medium" gap="large" pad={{ bottom: "medium" }}>
         <CardTemplate title={"Our Menu"} imgurl={ourmenu} content={""} footer={<div><p className="card-footer">Our menu consists of 12-15 seasonal items based on Italian, Greek, and Turkish culture.</p><a href="#">See our new menu</a></div>} />
-        <CardTemplate title={"Book a table"} imgurl={booktable} content={""} footer={<div><p className="card-footer">Reserve your table for an Italian, Greek, and Turkish dining experience.</p><a href="/reservations">Book now for special offers!</a></div>} />
+        <CardTemplate title={"Book a table"} imgurl={booktable} content={""} footer={<div><p className="card-footer">Reserve your table for an Italian, Greek, and Turkish dining experience.</p><a href={routes.reservations}>Book now for special offers!</a></div>} />
         <CardTemplate title={"Opening Hours"} imgurl={openhour} content={""} footer={<div><p className="card-footer">The Little Lemon Restaurant is open 7 days a week, except for public holidays.<br></br> Mon-Fri: 10am - 8pm, Sat-Sun: 10am - 9pm</p></div>} />
       </Grid>
       <Image></Image>
