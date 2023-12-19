@@ -1,70 +1,49 @@
-# Getting Started with Create React App
+# Framework
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app) and 
+[Grommet](https://v2.grommet.io/), a react-based frame work that provides accessibility, modularity, responsiveness, 
+and theming.
+# Demo
+[Click here to view the live demo](https://r95222023.github.io/Little-Lemon-Front-End/#/)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Features
+- Front-end log in/out functionality.
+- Smooth navigation through the pages.
+- Responsive design for better mobile device user experience(UX).
+- Accessibility tags are implemented on each clickable items.
+- Make a reservation using an interactive form with validation.
+- Change the theme with ease by modifying src/config.js.
+- Built with React and Gromme framework for a modern and interactive user experience.
+- Unit tests for most of the components and app.jsx.
+- Dark mode helps you quickly turn the screen to dark at low-light environment.
 
-## Available Scripts
+# Installation
+In the project directory, run:
 
-In the project directory, you can run:
+### `npm install`
 
+# Usage
+
+Runs the app in the development mode by executing:
 ### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+To view the rendered results in your browser, open [http://localhost:3000](http://localhost:3000).
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
+Builds the app for production with
 ### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
+The newly built app is located at the `build` folder.\
 The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+# Test
+There are total 10 tests for most of the components and the app.jsx. To run  the unit test launches the following command:
+### `npm test`
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
 ## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+You can learn how to start a react app in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
 To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+For more detail about the framework used in this project, check out [Grommet](https://v2.grommet.io/).

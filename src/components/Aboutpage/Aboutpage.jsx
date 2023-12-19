@@ -1,37 +1,13 @@
-import React, { useState, useContext } from "react";
 import '../../App.css';
-import { Link } from "react-router-dom";
-import { Moon, Sun } from "grommet-icons";
 import {
-  Anchor,
   Box,
-  Button,
-  Card,
-  CardHeader,
-  CardBody,
-  CardFooter,
   Grid,
-  grommet,
-  Grommet,
-  Header,
-  Heading,
   Image,
-  Menu,
-  Nav,
-  Page,
   PageContent,
   PageHeader,
-  Paragraph,
-  ResponsiveContext,
-  Text,
 } from "grommet";
-import { CardTemplate, AppBar, Banner, Footer } from "..";
-import { deepMerge } from "grommet/utils";
-import AuthContext from "../../context/AuthContext";
 
 import owners from "../../assets/mario-and-adrian.jpg"
-import booktable from "../../assets/restaurant_inside.jpg"
-import openhour from "../../assets/head_chef.jpg"
 
 function Aboutpage() {
   //   let { dark } = useContext(AuthContext)
@@ -45,7 +21,7 @@ function Aboutpage() {
         }}
         gap="large"
       >
-        <Box><div class="column">
+        <Box><div className="column">
           <p>
             Based in Chicago, Illinois, Little Lemon is a family owned
             Mediterranean restaurant, focused on traditional recipes served with a

@@ -2,37 +2,18 @@ import {
     Anchor,
     Box,
     Button,
-    Card,
-    CardHeader,
-    CardBody,
-    CardFooter,
-    DateInput,
     Form,
     FormField,
-    Grid,
-    grommet,
-    Grommet,
-    Header,
-    Heading,
     Layer,
-    Menu,
-    Nav,
-    Page,
-    PageContent,
-    PageHeader,
-    Paragraph,
-    ResponsiveContext,
-    Select,
-    Text,
     TextInput
 } from "grommet";
-import AuthContext from '../../context/AuthContext'
-import { useContext, useState } from "react";
-import { useNavigate } from "react-router-dom"
+import { useState } from "react";
+import config from '../../config'
+
+const lsk = config.localStorageKey
 
 const Register = (props) => {
     // const navigate = useNavigate()
-    let { dark, toggleDark, isLoggedIn, onLogin, onLogout } = useContext(AuthContext)
     const [showRegister, setShowRegister] = useState();
     const openRegister = () => { setShowRegister(true) }
     const closeRegister = () => { setShowRegister(false) }
@@ -40,10 +21,9 @@ const Register = (props) => {
     let lastValidationResults = {}
     const onSubmit = () => {
         if (lastValidationResults.valid) {
-            // setTimeout(()=>{navigate('/')}, 200)
-            // window.location.reload(false);
             setTimeout(() => {
-                window.location.href = window.location.protocol+ '//' + window.location.host + '/'
+                localStorage.setItem(lsk.isLoggedIn, 'true')
+                window.location.reload(false);
             }, 200)
         }
     }
@@ -81,7 +61,7 @@ const Register = (props) => {
                                 { rexexp: /^[a-zA-Z0-9._+%&#]{5,35}$/ },
                                 (pwd) => {
                                     console.log('reenter', formValue['reenter'], pwd, formValue['reenter'])
-                                    if (pwd && pwd != formValue['password']) { console.log('mismatch'); return 'Passwords do not match' }
+                                    if (pwd && pwd !== formValue['password']) { console.log('mismatch'); return 'Passwords do not match' }
                                     return undefined;
                                 },
                             ]} validateOn="change">

@@ -16,7 +16,7 @@ import config from '../../config'
 const lsk = config.localStorageKey
 
 const Book = (props) => {
-    const { onBookFormSubmit } = useContext(AuthContext)
+    const { onBookFormSubmit, isLoggedIn } = useContext(AuthContext)
     const [showBook, setShowBook] = useState();
     const closeBook = () => setShowBook(false)
     const openBook = () => setShowBook(true)
@@ -29,7 +29,8 @@ const Book = (props) => {
             onBookFormSubmit(formValue)
             localStorage.setItem(lsk.bookForm, JSON.stringify(formValue))
             setTimeout(() => {
-                window.location.href = window.location.protocol+ '//' + window.location.host + '/success_booking'
+//                 window.location.href = window.location.protocol+ '//' + window.location.host + '/success_booking'
+                   window.location.href = config.getHostUrl(window.location) + config.routes.successBooking
             }, 200)
         }
     }

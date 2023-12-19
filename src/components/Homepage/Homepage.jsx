@@ -1,54 +1,20 @@
-import React, { useState, useContext } from "react";
 import '../../App.css';
-import { Link } from "react-router-dom";
-import { Moon, Sun } from "grommet-icons";
 import {
-  Anchor,
   Box,
-  Button,
-  Card,
-  CardHeader,
-  CardBody,
-  CardFooter,
   Grid,
-  grommet,
-  Grommet,
-  Header,
-  Heading,
   Image,
-  Menu,
-  Nav,
-  Page,
   PageContent,
   PageHeader,
   Paragraph,
-  ResponsiveContext,
-  Text,
 } from "grommet";
-import { CardTemplate, AppBar, Banner, Footer } from "..";
-import { deepMerge } from "grommet/utils";
-import AuthContext from "../../context/AuthContext";
+import { CardTemplate, Banner } from "..";
 
 import ourmenu from "../../assets/grill.jpg"
 import booktable from "../../assets/restaurant_inside.jpg"
 import restaurant from "../../assets/restaurant food.jpg"
 import openhour from "../../assets/head_chef.jpg"
 
-const theme = deepMerge(grommet, {
-  global: {
-    colors: {
-      brand: "#228BE6",
-    },
-    font: {
-      family: "Roboto",
-      size: "14px",
-      height: "20px",
-    },
-  },
-});
-
 function Homepage() {
-  //   let { dark } = useContext(AuthContext)
   return (
     <PageContent>
       <Banner />

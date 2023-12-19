@@ -1,4 +1,3 @@
-import {useState} from 'react'
 import Book from "../../components/Book/Book"
 import {
   Box,
@@ -12,49 +11,57 @@ import {
 } from 'grommet';
 
 const data = [
-  {
+  { 
+    id:17,
     name: 'Alan Josiah ',
     date: '2024-01-09',
     timeslot: 13,
     guest_numbers: 4,
   },
   {
+    id:18,
     name: 'Bryan Lane',
     date: '2024-01-09',
     timeslot: 12,
     guest_numbers: 5,
   },
   {
+    id:19,
     name: 'Chris Willa',
     date: '2024-01-09',
     timeslot: 12,
     guest_numbers: 2,
   },
   {
+    id:20,
     name: 'Eric Maegan',
     date: '2024-01-09',
     timeslot: 11,
     guest_numbers: 3,
   },
   {
+    id:21,
     name: 'Doug Yong',
     date: '2024-01-09',
     timeslot: 12,
     guest_numbers: 4,
   },
   {
+    id:22,
     name: 'Jet Isabella',
     date: '2024-01-09',
     timeslot: 12,
     guest_numbers: 4,
   },
   {
+    id:23,
     name: 'Michael',
     date: '2024-01-10',
     timeslot: 13,
     guest_numbers: 6,
   },
   {
+    id:24,
     name: 'Tracy Kimbery',
     date: '2024-01-10',
     timeslot: 12,
@@ -73,7 +80,7 @@ export const ReservationsPage = () => (
   // Uncomment <Grommet> lines when using outside of storybook
   // <Grommet theme={...}>
   <Box align="center" pad="large">
-    <Table caption={<h1>Reservations</h1>}>
+    <Table caption={"Reservations"}>
       <TableHeader>
         <TableRow>
           {columns.map((c) => (

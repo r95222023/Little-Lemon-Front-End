@@ -18,7 +18,7 @@ test("Test AppBar", () => {
   );
 
   const loginbtn = screen.getByTestId("loginbtn");
-  // click the book btn
+  // click the login btn
   fireEvent.click(loginbtn);
   const login = screen.getByTestId("login");
   expect(login).toBeVisible();

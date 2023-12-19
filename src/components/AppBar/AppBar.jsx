@@ -1,26 +1,12 @@
 import {
-    Anchor,
     Box,
     Button,
-    Card,
-    CardHeader,
-    CardBody,
-    CardFooter,
     Form,
     FormField,
-    Grid,
-    grommet,
-    Grommet,
     Header,
-    Heading,
     Layer,
     Menu,
     Nav,
-    Page,
-    PageContent,
-    PageHeader,
-    Paragraph,
-    ResponsiveContext,
     Text,
     TextInput
 } from "grommet";
@@ -28,6 +14,9 @@ import { Home, Moon, Sun, Login, Logout, Menu as MenuIcon, Cafeteria, FormSchedu
 import AuthContext from '../../context/AuthContext'
 import { useContext, useState } from "react";
 import { Register } from "..";
+import config from '../../config'
+
+const routes = config.routes
 
 const AppBar = (props) => {
     const { dark, toggleDark, isLoggedIn, onLogin, onLogout } = useContext(AuthContext)
@@ -36,10 +25,10 @@ const AppBar = (props) => {
     const closeLogin = () => { setShowLogin(false) }
 
     let items = [
-        { label: 'Home', icon: <Home />, gap: 'small', href: "/" },
-        { label: 'About', icon: <Cafeteria />, gap: 'small', href: "/about" },
-        { label: 'Online Order', icon: <Deliver />, gap: 'small', href: "/online_order" },
-        { label: 'Reservations', icon: <FormSchedule />, gap: 'small' },
+        { label: 'Home', icon: <Home />, gap: 'small', href: routes.home },
+        { label: 'About', icon: <Cafeteria />, gap: 'small', href: routes.about },
+        { label: 'Online Order', icon: <Deliver />, gap: 'small', href: routes.onlineOrder },
+        { label: 'Reservations', icon: <FormSchedule />, gap: 'small', href: routes.reservations  },
         !dark ? { label: 'Dark mode', icon: <Moon />, gap: 'small', onClick: toggleDark, } : { label: 'Light Mode', icon: <Sun />, gap: 'small', onClick: toggleDark },
         !isLoggedIn ? { label: 'Log in', icon: <Login />, gap: 'small', onClick: openLogin } : { label: 'Log out', icon: <Logout />, gap: 'small', onClick: onLogout },
     ]
@@ -85,32 +74,28 @@ const AppBar = (props) => {
                     className="hidden-mobile"
                     a11yTitle={"Home"}
                     plain={true}
-                    // icon={<Home />}
-                    href="/"
+                    href={routes.home}
                     label={<Text>Home</Text>}
                 />
                 <Button
                     className="hidden-mobile"
                     a11yTitle={"Reservations"}
                     plain={true}
-                    // icon={<Home />}
-                    href="/reservations"
+                    href={routes.reservations}
                     label={<Text>Reservations</Text>}
                 />
                 <Button
                     className="hidden-mobile"
                     a11yTitle={"Online Order"}
                     plain={true}
-                    // icon={<Home />}
-                    href="/online_order"
+                    href={routes.onlineOrder}
                     label={<Text>Online order</Text>}
                 />
                 <Button
                     className="hidden-mobile"
                     a11yTitle={"About"}
                     plain={true}
-                    // icon={<Home />}
-                    href="/about"
+                    href={routes.about}
                     label={<Text>About</Text>}
                 />
                 {!isLoggedIn ? <Button
@@ -118,7 +103,6 @@ const AppBar = (props) => {
                     className="hidden-mobile"
                     a11yTitle={"Log in"}
                     plain={true}
-                    // icon={<Home />}
                     onClick={openLogin}
                     label={<Text>Log in</Text>}
                 /> : <Button
@@ -131,7 +115,6 @@ const AppBar = (props) => {
                 <Menu
                     dropProps={{ align: { top: 'bottom', right: 'right' } }}
                     dropBackground="#FFFFFF"
-                    // label="Profile"
                     icon={<MenuIcon />}
                     items={items}
                 />

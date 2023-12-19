@@ -1,28 +1,10 @@
-import React, { useState, useContext } from "react";
+import React, { useContext } from "react";
 import './App.css';
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { Home, Moon, Sun } from "grommet-icons";
+import { Routes, Route } from "react-router-dom";
 import {
-  Anchor,
-  Box,
-  Button,
-  Card,
-  CardHeader,
-  CardBody,
-  CardFooter,
-  Grid,
   grommet,
   Grommet,
-  Header,
-  Heading,
-  Menu,
-  Nav,
   Page,
-  PageContent,
-  PageHeader,
-  Paragraph,
-  ResponsiveContext,
-  Text,
 } from "grommet";
 import { AppBar, Footer, Homepage, Aboutpage, SuccessBookingPage, OnlineOrderPage, ReservationsPage } from "./components";
 import { deepMerge } from "grommet/utils";
@@ -56,6 +38,7 @@ function App() {
         <AppBar></AppBar>
           <Routes>
             <Route path="/" element={<Homepage />} />
+            <Route path="/Little-Lemon-Front-End" element={<Homepage />} />
             <Route path="/about" element={<Aboutpage />} />
             <Route path="/success_booking" element={<SuccessBookingPage />} />
             <Route path="/online_order" element={<OnlineOrderPage />} />
