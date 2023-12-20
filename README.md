@@ -1,11 +1,17 @@
-# Framework
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app) and 
+# Little Lemon Restaurant Front End
+
+This marks the culmination of the Meta Front-End Developer Course on Coursera, showcasing a Django web application
+tailored for the Little Lemon restaurant. For Back-End counter part, check out [Little Lemon Back-End](https://github.com/r95222023/Little-Lemon-Back-End)
+
+## Framework
+This project was initiated using [Create React App](https://github.com/facebook/create-react-app) and 
 [Grommet](https://v2.grommet.io/), a react-based frame work that provides accessibility, modularity, responsiveness, 
 and theming.
-# Demo
+
+## Demo
 [Click here to view the live demo](https://r95222023.github.io/Little-Lemon-Front-End/#/)
 
-# Features
+## Features
 - Front-end log in/out functionality.
 - Smooth navigation through the pages.
 - Responsive design for better mobile device user experience(UX).
@@ -16,27 +22,27 @@ and theming.
 - Unit tests for most of the components and app.jsx.
 - Dark mode helps you quickly turn the screen to dark at low-light environment.
 
-# Installation
+## Installation
 In the project directory, run:
 
-### `npm install`
+`npm install`
 
-# Usage
+## Usage
 
 Runs the app in the development mode by executing:
-### `npm start`
+`npm start`
 
 To view the rendered results in your browser, open [http://localhost:3000](http://localhost:3000).
 
 Builds the app for production with
-### `npm run build`
+`npm run build`
 
 The newly built app is located at the `build` folder.\
 The build is minified and the filenames include the hashes.\
 
-# Test
+## Test
 There are total 10 tests for most of the components and the app.jsx. To run  the unit test launches the following command:
-### `npm test`
+`npm test`
 
 See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
